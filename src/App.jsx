@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./components/Hero.jsx";
+import PartnersBar from "./components/PartnersBar.jsx";
+import Card from "./components/Card.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar
+        headerTitle="CRUDE OIL EX"
+        homeLink="Home"
+        featuresLink="Features"
+        faqsLink="FAQs"
+        contanctLink="Contact Us"
+        headerClasses="font-montserrat fs-2"
+      />
+      <Hero
+        eyebrowText="Welcome to Crude Oil EX"
+        titleText="Bringing Enhanced Oil Recovery to Yacimiento Vaca Muerta"
+        descriptionText="Discover the latest advancements in crude oil extraction techniques at Yacimiento Vaca Muerta. Through cutting-edge engineering, data-driven decision-making, and continuous innovation, we are redefining how energy is produced in one of the world’s most important shale formations."
+        learnMoreText="Learn More"
+        aboutUsText="About us"
+        imageSrc="https://cdn.britannica.com/10/205510-050-55877501/drilling-fracking-rig.jpg?utm_source=chatgpt.com"
+        imageAlt="Fracking rig"
+      />
+      <PartnersBar
+        logo1="./src/assets/logoipsum/logoipsum-344.png"
+        logo2="./src/assets/logoipsum/logoipsum-412.png"
+        logo3="./src/assets/logoipsum/logoipsum-404.png"
+        logo4="./src/assets/logoipsum/logoipsum-415.png"
+      />
+      <Card />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

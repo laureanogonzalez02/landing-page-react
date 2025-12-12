@@ -1,0 +1,17 @@
+.partners-bar {
+  background-color: #f5f5f5;
+}
+
+.partner-box {
+  align-items: center;
+  justify-content: center;
+  height: 8em;
+  max-width: 14rem;
+}
+
+.partner-logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 0.4em;
+}
