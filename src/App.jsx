@@ -2,9 +2,32 @@ import "./App.css";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import PartnersBar from "./components/PartnersBar.jsx";
-import Card from "./components/Card.jsx";
+import CardGroup from "./components/CardGroup.jsx";
 
 function App() {
+  const cards = [
+    {
+      number: "01.",
+      title: "Advanced Techniques",
+      text: "State-of-the-art methods to maximize extraction efficiency while minimizing environmental impact.",
+    },
+    {
+      number: "02.",
+      title: "Data-Driven Insights",
+      text: "Leveraging real-time data analytics and predictive modeling to optimize production and reduce operational risks.",
+    },
+    {
+      number: "03.",
+      title: "Sustainable Practices",
+      text: "Implementing eco-friendly technologies and sustainable practices to ensure responsible resource management.",
+    },
+    {
+      number: "04.",
+      title: "Innovation Leadership",
+      text: "Continuously investing in research and development technologies to stay at the forefront of industry innovation.",
+    },
+  ];
+
   return (
     <>
       <Navbar
@@ -30,7 +53,7 @@ function App() {
         logo3="./src/assets/logoipsum/logoipsum-404.png"
         logo4="./src/assets/logoipsum/logoipsum-415.png"
       />
-      <Card />
+      <CardGroup items={cards} />
     </>
   );
 }

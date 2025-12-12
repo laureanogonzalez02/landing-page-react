@@ -1,7 +1,14 @@
 .card {
   width: 21em;
-  height: 20.5em;
+  max-height: 23em;
+  overflow: hidden;
   padding: 1%;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  -webkit-box-orient: vertical;
 }
 
 .card-number {
@@ -13,12 +20,14 @@
 }
 
 .card-title {
-  font-size: 1.4em;
-  font-weight: 700;
+  font-family: "montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 670;
   color: #2d3748;
 }
 
 .card-text {
+  font-family: "inter", sans-serif;
   font-size: 1em;
   color: #6b7280;
   line-height: 1.7em;
