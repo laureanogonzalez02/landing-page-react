@@ -3,11 +3,20 @@
 }
 
 .hero-eyebrow {
-  font-size: 0.85rem;
+  font-family: "montserrat", sans-serif;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   color: rgba(252, 120, 25, 0.829);
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 720;
+  color: #111111;
+  margin: 0.2em 0 0.5em 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero-description {
@@ -15,6 +24,7 @@
   color: #555555;
   line-height: 1.6;
   max-width: 600px;
+  font-family: "Inter", sans-serif;
 }
 
 .hero-card {
@@ -54,7 +64,8 @@
 
 .btn {
   padding: 3% 16%;
-  font-weight: 700;
+  font-weight: 550;
+  font-family: "Montserrat", sans-serif;
 }
 
 .button-learnMore {
