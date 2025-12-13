@@ -2,41 +2,56 @@ import "./Navbar.css";
 
 const Navbar = (props) => {
   return (
-    <div className="container-fluid">
-      <header className="d-flex flex-wrap justify-content-center py-3 m-2">
-        <a
-          href="/"
-          className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <svg className="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlinkHref="#bootstrap"></use>
-          </svg>
+    <nav className="navbar navbar-expand-md py-3">
+      <div className="container">
+        <a href="#" className="navbar-brand fw-bold">
           <span className={props.headerClasses}>{props.headerTitle}</span>
         </a>
-        <ul className="nav nav-pills align-items-center justify-content-center gap-4 font-inter">
-          <li className="nav-item">
-            <a href="#" className="nav-link text-dark" aria-current="page">
-              {props.homeLink}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link text-dark">
-              {props.featuresLink}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link text-dark">
-              {props.faqsLink}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="btn bg-black text-white rounded-3 px-4 py-2">
-              {props.contanctLink}
-            </a>
-          </li>
-        </ul>
-      </header>
-    </div>
+
+        <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="mainNavbar">
+          <ul className="navbar-nav ms-auto align-items-center gap-md-4">
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="#home">
+                {props.homeLink}
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="#features">
+                {props.featuresLink}
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="#faqs">
+                {props.faqsLink}
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                href="#contactus"
+                className="btn bg-black text-white rounded-3 px-4 py-2"
+              >
+                {props.contanctLink}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

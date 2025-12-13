@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import PartnersBar from "./components/PartnersBar.jsx";
 import CardGroup from "./components/CardGroup.jsx";
+import PageFooter from "./components/PageFooter.jsx";
 
 function App() {
   const cards = [
@@ -54,6 +55,7 @@ function App() {
         logo4="./src/assets/logoipsum/logoipsum-415.png"
       />
       <CardGroup items={cards} />
+      <PageFooter copyrightText="© 2025 Crude Oil EX. All rights reserved." />
     </>
   );
 }
